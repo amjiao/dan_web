@@ -1,0 +1,121 @@
+<!-- Slideshow container -->
+  <div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="slide">
+        <div class="column2">
+          <div class="box">
+            hello
+          </div>
+          <div class="box">
+            hello
+          </div>
+        </div>
+      </div>
+      <div class="text">1/3</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="slide">
+        <div class="column2">
+          <div class="box">
+            hello
+          </div>
+          <div class="container">hello</div>
+        </div>
+        <p>Hongyang's paper titled "Fast Multiphysics Simulation of Maxwell's and Drift-Diffusion Equations for Predictive Micro- and Nano-device Simulation in the THz Regime" has been selected as an Honorable Mention Paper Award in the 2024 IEEE Antennas and Propagation Symposium (AP-S) Student Paper Competition. Congratulations! Hongyang will also receive a $2000 stipend. (May 2024)</p>
+      </div>
+      <div class="text">2/3</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="slide">
+        <p>Prof. Jiao named Editor-in-Chief of IEEE Journal on Multiscale and Multiphysics Computational Techniques for the next term. The IEEE Journal on Multiscale and Multiphysics Computational Techniques is a publication of three IEEE societies: the IEEE Microwave Theory and Techniques Society (MTT-S), the IEEE Antennas and Propagation Society (AP-S), and the IEEE Electromagnetic Compatibility Society (EMC-S). The journal is a premium platform for publishing and promoting frontier research in multiscale and multiphysics computation and their important applications. (March, 2024)</p>
+      </div>
+      <div class="text">3/3</div>
+    </div>
+
+    <br>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+  </div>
+
+
+
+<!--students-->
+<section class="students">
+    <div class="heading">
+      <h1>Students</h1>
+    </div>
+
+    <div class="flex-container">
+      <div class="flexbox content-h2">
+        <div class="container">
+        <h2 style="text-align:center; padding-bottom: 10px;">Ph.d and Masters</h2>
+        
+        <ul>
+          <li>Vinicius Cabral Do Nascimento</li>
+          <li>Sanjeev Khare</li>
+          <li>Gjorgi Vitanov</li>
+          <li>Hongyang Liu</li>
+          <li>Runwei Zhou</li>
+        </ul>
+      </div>
+      </div>
+      
+      <div class="flexbox content-h2">
+        <div class="container">
+        <h2 style="text-align:center; padding-bottom: 10px;">Postdoc</h2>
+        <ul>
+          <li>Yuhang Dou (Xiamen University)</li>
+          <li>Ping Li (Shanghai Jiaotong University)</li>
+          <li>Yanpu Zhao (Wuhan University)</li>
+        </ul>
+      </div>
+      </div>
+
+      <div class="flexbox content-h2">
+        <div class="container">
+        <h2 style="text-align:center; padding-bottom: 10px;">Visiting Students and Scholars</h2>
+        <ul>
+          <li>Yu Zhao (Shanghai Jiaotong University)</li>
+          <li>Xunwang Dang (Tsinghua University)</li>
+        </ul>
+      </div>
+      </div>
+    </div>
+
+    <div class="content-h2">
+        <h2>Alumini</h2>
+        <div class="container" >
+          <ul >
+            <li>Michael Hayashi (June 2023, Analog Devices, OR)</li>
+            <li>Yifan Wang (PhD Aug. 2022, Cadence, CA)</li>
+            <li>Shuzhan Sun (PhD Oct. 2021, Google, CA)</li>
+            <li>Chang Yang (PhD Aug. 2021, Synopsys, CA)</li>
+            <li>Li Xue (PhD Sept. 2020, Amazon, CA)</li>
+            <li>Miaomiao Ma (PhD Aug. 2019, Intel Corporation, CA)</li>
+            <li>Kaiyuan Zeng (PhD May 2019, Nividia, CA)</li>
+            <li>Skanda Kotethota (Master, 2019, Starkey hearing technologies, MN)</li>
+            <li>Jin Yan (PhD Dec. 2016, Google X, CA)</li>
+            <li>Woochan Lee (PhD Sept. 2016, Associate Professor at Incheon National University, Republic of Korea)</li>
+            <li>Md. Gaffar (PhD Feb. 2016, Synopsys, CA)</li>
+            <li>Bangda Zhou (PhD Aug. 2015, Google, CA)</li>
+            <li>Saad Omar (PhD May 2014, Schlumberger-Doll Research, Cambridge, MA)</li>
+            <li>Qing He (PhD Dec. 2012, CEO of a startup)</li>
+            <li>Duo Chen (PhD Aug. 2012, Apple, CA)</li>
+            <li>Haixin Liu (PhD Jan. 2012, Meta, CA)</li>
+            <li>Wenwen Chai (PhD Feb. 2012, Synopsys, CA)</li>
+            <li>Feng Sheng (PhD Feb. 2012, Synopsys, CA)</li>
+            <li>Jianfang Zhu (PhD Aug. 2011, Intel Corporation, OR, adjunct Professor of Purdue ECE)</li>
+            <li>Jongwon Lee (PhD Dec. 2010, South Korea's state-funded Agency for Defense Development (ADD))</li>
+            <li>Houle Gan (PhD Aug. 2010, Google, CA)</li>
+          </ul>
+        </div>
+      </div>

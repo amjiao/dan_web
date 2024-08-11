@@ -1,0 +1,161 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  --primary-color: #00072D;
+  --vibe-color: #001C55;
+  --light-color: #f4f4f6;
+  --dark-color: #000315;
+  --highlight-color: #3e8e41;
+}
+
+/* BODY -------------------------------------------------------------------*/
+body{
+  font-size: 16px; 
+  line-height: 1.5;
+  background: var(--primary-color);
+  color: var(--light-color);
+}
+
+a {
+  text-decoration: none;
+  color: var(--light-color); 
+}
+
+a:hover{
+  color: var(--highlight-color);
+}
+
+ul {
+  list-style: none;
+}
+
+li{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  line-height: 1.5;
+}
+
+img{
+  max-width: 100%
+}
+/*--------------------------------------*/
+
+/*----Utility Classes ------------------------------------------------------------*/
+.container {
+  max-width: 1200px;
+  margin:auto;
+  padding: 20px 10px;
+  align-items: center;
+}
+
+.heading {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 10px;
+  font-size: 30px;
+  font-weight: 400;
+  color: var(--light-color);
+}
+
+.page-heading{
+  padding-top: 130px;
+}
+
+.list-spacing li{
+  padding-left: 10px;
+  margin-bottom: 15px;
+}
+
+.bright-background{
+  background-color: var(--vibe-color);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.bright-background li{
+  text-align: left;
+}
+
+.top-pad{
+  padding-top: 100px;
+  margin: 0 auto;
+}
+
+.bottom-pad{
+  padding-bottom: 100px;
+}
+
+.news-background{
+  position: absolute;
+  left: 15%;
+  width: 70%;
+  padding: 50% 25% 40% 25%;
+  background: var(--vibe-color);
+  margin: 0 auto;
+  z-index: -2;
+}
+
+.opacity{
+  opacity: 0.9
+}
+/*------------------------------------*/
+
+/*--content -----------------------------------------------------------------*/
+.content {
+  max-width: 1200px;
+  text-align: center;
+  margin-top:75px;
+  margin: 30px;
+}
+
+.content-h1{
+  font-size: 40px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.content-h2{
+  font-size: 20px;
+  padding: 10px;
+}
+
+.content-pic{
+  padding-top: 50px;
+}
+/*--------------------------------*/
+
+/*---jiao-------------------------------------------------------------------*/
+.jiao img {
+  height: auto; 
+  width: auto; 
+  max-width: 300px; 
+  max-height: 300px;
+}
+
+.jiao .heading{
+  background-color: var(--primary-color);
+}
+
+.jiao a{
+  font-size: 16px;
+  transition: 0.5s;
+}
+
+.jiao a:hover{
+  color: var(--highlight-color)
+}
+
+.jiao p{
+  font-size: 16px;
+}
+.light-background{
+  background: var(--light-color);
+  color: var(--primary-color);
+}
+/*------------------------------------*/

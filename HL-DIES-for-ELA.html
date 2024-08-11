@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Direct Integral Equation Solvers</title><link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="css/navbar-foot.css"/>
+  <script src="https://kit.fontawesome.com/fba5d0916e.js" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" href = "images/purduep.png" type = "image/x-icon"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!--navbar-->
+  <div id="navbar"></div> 
+  <script> 
+      fetch('navbar.html') 
+          .then(response => response.text()) 
+          .then(data => { 
+              document.getElementById('navbar').innerHTML = data; 
+          }); 
+  </script> 
+
+  <div class="top-pad heading">
+    <h2>Direct Integral Equation Solvers for Electrically Large Analysis</h2>
+  </div>
+  
+  <div class="container research-desc">
+    
+    <p> Unlike electrically small problems, the rank of an electrodynamic IE operator increases with electric size for achieving a prescribed accuracy, which results in a higher computational complexity if no advanced algorithms are conceived to effectively manage the rank's growth with electric size. The true indicator of this rank's growth is singular value decomposition (SVD), which is computationally O(N^3) and is thus not used explicitly.</p>
+    <br>
+    <p>Prevailing source-observer separated representations of the IE operator adopted by existing fast IE solvers do not lead to a minimal rank representation required by accuracy. These representations include interpolation-based, Taylor series expansion based, plane wave expansion based methods, etc. In fact, these representations result in a full-rank representation of the IE operator for electrically large problems, which makes the compression of the IE operator sub-optimal for general electrodynamic analysis.</p>
+    <br>
+    <p>In view of the pivotal importance of the rank of the off-diagonal blocks in an IE operator, we have carried out a theoretical study on its growth with electric size in integral equations. The significance of this study lies in the fact that it derives a closed-form analytical expression of the rank of the coupling Green's function, which has the same scaling as that depicted by SVD-based rank revealing. The findings on the rank are summarized as follows:</p>
+    <ol>
+      <li>The rank (r) of the off-diagonal block, irrespective of the electric size, is far less than the size of the block (m), thus the off-diagonal block has a low rank representation i.e. r &lt;&lt; m.</li>
+      <li>For electrically small and one-dimensional configurations of sources and observers, the rank required by a prescribed accuracy remains constant irrespective of the problem size.</li>
+      <li> For 2- and 3-D configurations, the rank varies as square root of logarithm and linearly with the electric size, respectively.</li>
+    </ol>
+
+    <p>Based on the above findings, we have developed fast direct integral equation solvers for electrically large analysis. In our direct surface IE solvers, a dense matrix for a 96-wavelength problem with over 1 million unknowns was directly factorized in 20 hours with 85-seconds LU solution time on a single 3 GHz CPU core. In our electrically large volume IE solver, we have achieved O(N) complexity in matrix-vector multiplication, and O(NlogN) complexity in inverse irrespective of electrical size.</p>
+    
+  <section class="selected-pubs">
+  <div class="container">
+    <h2>Selected Publications</h2>
+    <ul>
+      <li>
+        <a href="https://engineering.purdue.edu/~djiao/publications/Purdue_rank_IE_final_file.pdf" target="_blank">[1] W. Chai and D. Jiao, "A Theoretical Study on the Rank of Integral Operators for Broadband Electromagnetic Modeling from Static to Electrodynamic Frequencies," IEEE Trans. on Components, Packaging and Manufacturing Technology, vol. 3, no. 12, pp. 2113-2126, December 2013.
+        </a>
+      </li>
+      <li>
+        <a href="https://engineering.purdue.edu/~djiao/publications/HLU_IE_APS10.pdf" target="_blank">[2] W. Chai and D. Jiao, "A Complexity-Reduced H-Matrix Based Direct Integral Equation Solver with Prescribed Accuracy for Large-Scale Electrodynamic Analysis," the 2010 IEEE International Symposium on Antennas and Propagation, 4 pages, July 2010.
+        </a>
+      </li>
+      <li>
+        <a href="http://docs.lib.purdue.edu/cgi/viewcontent.cgi?article=1409&context=ecetr" target="_blank">[3] W. Chai and D. Jiao, "A Complexity-Reduced H-Matrix Based Direct Integral Equation Solver with Prescribed Accuracy for Large-Scale Electrodynamic Analysis," TR-ECE-11-04, School of Electrical Engineering, Purdue University, Feb. 2011, 20 pages.
+        </a>
+      </li>
+      <li>
+        <a href="https://engineering.purdue.edu/~djiao/publications/newH2_APS10.pdf" target="_blank">[4] W. Chai and D. Jiao, "A New H2-Matrix-Based Representation of Electrodynamic Systems with Minimized Rank and Prescribed Accuracy," IEEE Int. Symp. Antennas and Propagation, July 2010.
+        </a>
+      </li>
+      <li>
+        <a href="https://engineering.purdue.edu/~djiao/publications/VIE_dynamic.pdf" target="_blank">[5] S. Omar and D. Jiao, "O(N) Iterative and O(NlogN) Direct Volume Integral Equation Solvers for Large-Scale Electrodynamic Analysis," ICEAA, pp. 593-596, 2014.
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!--footer-->
+<div id="footer"></div> 
+<script> 
+    fetch('footer.html') 
+        .then(response => response.text()) 
+        .then(data => { 
+            document.getElementById('footer').innerHTML = data; 
+        }); 
+</script> 
+</body>
+</html>

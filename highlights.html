@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Highlights</title><link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="css/navbar-foot.css"/>
+  <script src="https://kit.fontawesome.com/fba5d0916e.js" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" href = "images/purduep.png" type = "image/x-icon"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!--navbar-->
+  <div id="navbar"></div> 
+  <script> 
+      fetch('navbar.html') 
+          .then(response => response.text()) 
+          .then(data => { 
+              document.getElementById('navbar').innerHTML = data; 
+          }); 
+  </script> 
+
+<section class="news container">
+  <div class="offset-box">
+    <div class="offset-head top-pad">
+      <h1>Research Highlights</h1>
+    </div>
+    
+    <div class="news-background"></div>
+
+    <!--
+    <div class="filter-bar">
+      <div class="filter-container">
+        <div class="flexbox">
+          Filter by:
+        </div>
+        <div class="flexbox">
+          <a href = "index.html">Home</a>
+        </div>
+        <div class="flexbox">
+          <a href = "about.html">About Us</a>
+        </div>
+        <div class="flexbox">
+          <a href = "news.html">News</a>
+        </div>
+      </div>
+    </div>
+    -->
+
+    <div class="news-offset">
+      <div class="highlight-container" style="padding-top: 50px;">
+        <div class="highlight-box">
+          <a href="HL-direct-fem.html">
+            <h2>Direct Finite Element Solver of Linear Complexity for Large-Scale Electromagnetic Analysis:</h2>>
+          </a>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, eveniet aspernatur recusandae ipsa at deserunt quia eum magni consectetur similique aliquid ratione quisquam, illum repellendus dolorum molestias rerum perferendis omnis.
+          </p>
+        </div>
+        <div class="highlight-box">
+          <a href="HL-direct-ie.html">
+            <h2>Direct Integral Equation Solvers (Inverse and LU) of Linear Complexity for Large-Scale Circuit Extraction:</h2>>
+          </a>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores dolor modi, cum at vitae sed. Minus explicabo eaque quam accusamus? Nisi aliquid aperiam dolorem laborum, maxime enim eligendi veritatis cupiditate!</p>
+        </div>
+        <div class="highlight-box">
+          <a href="HL-DIES-for-ELA.html">
+            <h2>Direct Integral Equation Solvers for Electrically Large Analysis:</h2>>
+          </a>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores dolor modi, cum at vitae sed. Minus explicabo eaque quam accusamus? Nisi aliquid aperiam dolorem laborum, maxime enim eligendi veritatis cupiditate!</p>
+        </div>
+        <div class="highlight-box">
+          <a href="HL-lo-freq-breakdown.html">
+            <h2>Low-Frequency Breakdown:</h2>>
+          </a>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores dolor modi, cum at vitae sed. Minus explicabo eaque quam accusamus? Nisi aliquid aperiam dolorem laborum, maxime enim eligendi veritatis cupiditate!</p>
+        </div>
+        <div class="highlight-box">
+          <a href="HL-explicit-unconditionally-stable.html">
+            <h2>Explicit and Unconditionally Stable Time-Domain Methods:</h2>>
+          </a>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores dolor modi, cum at vitae sed. Minus explicabo eaque quam accusamus? Nisi aliquid aperiam dolorem laborum, maxime enim eligendi veritatis cupiditate!</p>
+        </div>
+        <div class="highlight-box">
+          <a href="HL-circuit-simulator.html">
+            <h2>Extraction-Free Circuit Simulators:</h2>>
+          </a>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores dolor modi, cum at vitae sed. Minus explicabo eaque quam accusamus? Nisi aliquid aperiam dolorem laborum, maxime enim eligendi veritatis cupiditate!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+</section>
+
+
+  <!--footer-->
+  <div id="footer"></div> 
+  <script> 
+      fetch('footer.html') 
+          .then(response => response.text()) 
+          .then(data => { 
+              document.getElementById('footer').innerHTML = data; 
+          }); 
+  </script> 
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  
+  <link rel="stylesheet" href="css/navbar-foot.css"/>
+  <script src="https://kit.fontawesome.com/fba5d0916e.js" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" href = "images/purduep.png" type = "image/x-icon"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!--navbar-->
+  <div id="navbar"></div> 
+  <script> 
+      fetch('navbar.html') 
+          .then(response => response.text()) 
+          .then(data => { 
+              document.getElementById('navbar').innerHTML = data; 
+          }); 
+  </script> 
+
+  <!--Content-->
+  <section class="top-pad">
+    <div class="mission">
+      <img src="images/background2.png">
+      <h1>
+      Developing groundbreaking electromagnetic solutions to revolutionize future integrated circuits and system design.
+      </h1>
+    </div>
+  </section>
+    
+
+  <section class="stripe">
+    <div class="flex-container">
+    <div class="flexbox2 ">
+      <h1>Area of Research</h1>
+    </div>
+
+    <div class="flexbox2">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum laudantium architecto eaque culpa molestiae rem necessitatibus, autem dolores vitae aspernatur id iste dolorum voluptas in reiciendis quo earum deleniti natus.</p>
+    </div>
+  </div>
+  </section>
+
+  <section class="update">
+    <div class="offset-box">
+      <div class="offset-head">
+        <h1>Recent Updates</h1>
+      </div>
+
+      <div class="bright-background ">
+        <div class="content">
+          <div class="flex-container">
+            <div class="flexbox left-align">
+              <div class="container less-pad">
+                <h3>hello</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ex aliquid velit, eum similique maiores   quaerat accusamus quae expedita amet nesciunt, cum quos, ab adipisci. Minus minima numquam magni aperiam?</p>
+              </div> 
+            </div>
+            <div class="flexbox left-align"> 
+              <div class="container less-pad">
+                <h3>hello</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ex aliquid velit, eum similique maiores   quaerat accusamus quae expedita amet nesciunt, cum quos, ab adipisci. Minus minima numquam magni aperiam?</p>
+              </div> 
+            </div>
+            <div class="flexbox left-align"> 
+              <div class="container less-pad">
+                <h3>hello</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ex aliquid velit, eum similique maiores   quaerat accusamus quae expedita amet nesciunt, cum quos, ab adipisci. Minus minima numquam magni aperiam?</p>
+              </div> 
+            </div>
+          </div>
+
+          <div class="content">
+            <div class="long-btn">
+              <a href="news.html">Read More</a>
+            </div>
+          </div>
+      </div>    
+    </div>
+  </section>
+  <!--
+  <section class="content">
+    <div class="container">
+      <div class="content-pic">
+          <img src = "images/group.JPEG">
+      </div>
+      
+      <div class="content-buttons">
+        <a href ="about.html" class = "btn">Meet the Team</a>
+      </div>
+    </div>
+  </section>
+  
+
+  <section class="bright-background">
+    <div class="content-h1"> 
+      <h1>Recent Updates</h1>
+    </div>
+
+    <div class="flex-container">
+      <div class="flexbox">
+        <div class="container">
+          <h3>title1</h3>
+          <h5>date</h5>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum atque maiores voluptates excepturi qui ipsam ducimus consequuntur voluptas earum ratione dolorem, perspiciatis modi, necessitatibus enim? Dolores commodi inventore optio architecto!
+        </div>
+      </div>
+      
+      <div class="flexbox">
+        <div class="container">
+          <h3>title2</h3>
+          <h5>date</h5>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam incidunt fugit repudiandae atque illum adipisci? Pariatur ipsa, consectetur, aliquid officia alias labore adipisci placeat eveniet recusandae cum, fugit mollitia blanditiis?
+          <br>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti nulla impedit facilis culpa labore debitis enim dignissimos reprehenderit aliquid non exercitationem harum consectetur laboriosam pariatur quam similique repellat, assumenda nostrum.
+        </div>
+      </div>
+      
+      <div class="flexbox">
+        <div class="container">
+          <h3>title3</h3>
+          <h5>date</h5>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit eligendi, laborum perferendis molestiae iusto minus quae fugiat corporis asperiores officiis harum magnam nihil magni est voluptatum alias nostrum ad unde?
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <a href ="news.html" class = "btn">Read More</a>
+    </div>
+ 
+  </section>
+-->
+
+  <!--footer-->
+  <div id="footer"></div> 
+  <script> 
+      fetch('footer.html') 
+          .then(response => response.text()) 
+          .then(data => { 
+              document.getElementById('footer').innerHTML = data; 
+          }); 
+  </script> 
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

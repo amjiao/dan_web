@@ -1,0 +1,106 @@
+
+/*Navbar and footer*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  --primary-color: #00072D;
+  --vibe-color: #001C55;
+  --light-color: #f4f4f6;
+  --dark-color: #000315;
+  --bright-color: #A6E1FA;
+  --highlight-color: #3e8e41;
+}
+
+/* NAV BAR */
+.navbar {
+  padding-top: 5px;
+  position: fixed;
+  top: 0;
+  background: var(--dark-color);
+  color: var(--light-color);
+  width: 100%;
+  z-index: 10;
+}
+
+.navbar .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.navbar .main-menu ul {
+  display: flex;
+}
+
+.navbar ul li a {
+  padding: 10px 15px;
+  display:block;
+  font-weight: 600;
+  transition: 0.5s;
+}
+
+.navbar ul li a:hover {
+  color: var(--highlight-color);
+}
+
+.logo img{
+  max-width: 30vw;
+  max-height: 8vh;
+}
+
+  /* Dropdown Button */
+.dropbtn {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  font-weight: 600;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+}
+
+    /* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+    /* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--light-color);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+    /* Links inside the dropdown */
+.dropdown-content a {
+  color: var(--primary-color);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+/* FOOTER */
+.footer{
+  padding: 30px;
+  color:var(--light-color);
+  text-align: center;
+  background: var(--dark-color);
+  padding-top:10vh;
+  opacity: 0.7;
+}
+

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="css/navbar-foot.css"/>
+  <script src="https://kit.fontawesome.com/fba5d0916e.js" crossorigin="anonymous"></script>
+  
+  <link rel="shortcut icon" href = "images/purduep.png" type = "image/x-icon"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  
+
+</head>
+
+<body>
+
+  
+  <!--navbar-->
+  <div id="navbar"></div> 
+    <script> 
+        fetch('navbar.html') 
+            .then(response => response.text()) 
+            .then(data => { 
+                document.getElementById('navbar').innerHTML = data; 
+            }); 
+    </script> 
+  
+  <section class="news container">
+    <div class="offset-box">
+      <div class="offset-head top-pad">
+        <h1>News</h1>
+      </div>
+      
+      <div class="news-background"></div>
+      
+      <!--
+      <div class="filter-bar">
+        <div class="filter-container">
+          <div class="flexbox">
+            Filter by:
+          </div>
+          <div class="flexbox">
+            <a href = "index.html">Home</a>
+          </div>
+          <div class="flexbox">
+            <a href = "about.html">About Us</a>
+          </div>
+          <div class="flexbox">
+            <a href = "news.html">News</a>
+          </div>
+        </div>
+      </div>
+      -->
+      
+
+      <div class="news-offset">
+        <div class="masonry-container" style="padding-top: 50px;"> <!--you have to adjust max-height to get the alignment right as you change the news-->
+          <div class="masonry-box"> 
+            <div class="container less-pad"> <!--newest 9-12 announcements - add to top, delete from bottom-->
+              <h3>title</h3>
+              <p>1 New! Hongyang won the third place award in the Best Student Paper Competition of <a href="https://aces-society.org/" target="_blank">ACES 2024 conference</a>. His paper is titled "Algorithms for Accelerating the Co-simulation of Maxwell’s and Drift-Diffusion Equations for Transient Device Simulations in the THz Regime." Congratulations! (May 2024)
+              </p>
+            </div>
+          </div>
+          <div class="masonry-box"> 
+            <div class="container less-pad">
+              <h3>title</h3>
+            <p>2 New! Hongyang's paper titled "Fast Multiphysics Simulation of Maxwell's and Drift-Diffusion Equations for Predictive Micro- and Nano-device Simulation in the THz Regime" has been selected as an Honorable Mention Paper Award in the 2024 IEEE Antennas and Propagation Symposium (AP-S) Student Paper Competition. Congratulations! Hongyang will also receive a $2000 stipend. (May 2024)
+            </p>
+            </div>
+          </div>
+          <div class="masonry-box"> 
+            <div class="container less-pad">
+              <h3>title</h3>
+            <p>3. New! Prof. Jiao named Editor-in-Chief of IEEE Journal on Multiscale and Multiphysics Computational Techniques for the next term. The IEEE Journal on Multiscale and Multiphysics Computational Techniques is a publication of three IEEE societies: the IEEE Microwave Theory and Techniques Society (MTT-S), the IEEE Antennas and Propagation Society (AP-S), and the IEEE Electromagnetic Compatibility Society (EMC-S). The journal is a premium platform for publishing and promoting frontier research in multiscale and multiphysics computation and their important applications. (March, 2024)
+            </p>
+            </div>
+          </div>
+          <div class="masonry-box"> 
+            <div class="container less-pad">
+              <h3>title</h3>
+              <p>4. Vinícius Cabral do Nascimento has been selected as a recipient of Cadence's Diversity in Technology Scholarship for 2023. Congratulations! (Nov. 2023)
+              </p>
+            </div>
+          </div>
+          <div class="masonry-box"> 
+            <div class="container less-pad">
+              <h3>title</h3>
+              <p>5. Vinicius's paper titled "Patch-Based Perfectly Matched Layer Scheme in Three-Dimensional Unstructured Meshes" has been selected for an Honorable Mention Paper Award in the 2023 IEEE Antennas and Propagation Symposium (AP-S) Student Paper Competition. Congratulations! Vinicius will also receive a $2000 stipend. (April 2023)
+              </p>
+            </div>
+          </div>
+          <div class="masonry-box"> 
+            <div class="container less-pad">
+              <h3>title</h3>
+              <p>6. Prof. Jiao received the Applied Computational Electromagnetics Society (ACES) Computational Electromagnetics Award. This award honors career achievements and substantial, major contributions in the field of computational electromagnetics. She was recognized for contributions to a new generation of fast and large-scale solvers in computational electromagnetics. (Mar. 2023)
+              </p>
+            </div>
+          </div>
+          <div class="masonry-box"> 
+            <div class="container less-pad">
+              <h3>title</h3>
+              <p>7. Shuzhan's paper titled "Stability Control of Unsymmetrical Time-Domain Methods" has been selected as an Honorable Mention Paper Award in the 2022 IEEE Antennas and Propagation Symposium (AP-S) Student Paper Competition. Congratulations! Shuzhan will also receive a $1500 stipend. (May 2022)
+              </p>
+            </div>
+          </div>
+          <div class="masonry-box"> 
+            <div class="container less-pad">
+              <h3>title</h3>
+              <p>8. Shuzhan's paper titled "Split-Field Domain Decomposition Algorithm with Fast Convergence for Electromagnetic Analysis" has been selected as a Best Student Paper Award Finalist in the 2021 IEEE Antennas and Propagation Symposium (AP-S) Student Paper Competition. Congratulations! As a finalist, Shuzhan will receive a $1600 stipend. (Aug. 2021)
+              </p>
+            </div>
+          </div>
+          <div class="masonry-box"> 
+            <div class="container less-pad">
+              <h3>title</h3>
+              <p>9. Yifan's paper titled "A One-Stage $ O(N \log N) $ Algorithm for Generating Nested Low-Rank Representation of Electrically Large Volume Integral Equations" has been selected as an Honorable Mention Award in the 2021 IEEE Antennas and Propagation Symposium (AP-S) Student Paper Competition. Congratulations! Yifan will receive a $1500 stipend. (Aug. 2021)
+              </p>
+            </div>
+          </div>
+          <div class="masonry-box"> 
+            <div class="container less-pad">
+              <h3>title</h3>
+              <p>10. Prof. Jiao was selected as an IEEE MTT-Society Distinguished Microwave Lecturer for the term 2021-2023. The IEEE Microwave Theory and Techniques Society (MTT-S) each year carefully selects a group of Distinguished Microwave Lecturers (DMLs) who are internationally recognized experts and technical leaders in their fields within the Society. The DMLs are available to present talks to local chapters world-wide and serve as ambassadors for the Society. (June 2020)
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    </div>
+  </section>
+
+  
+
+  
+  <div class="collapse-content" style="padding-top: 50px;">
+    
+    <div class="container">
+      <ul>
+        <li>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis repudiandae vel animi adipisci explicabo atque, nam dolorum non tenetur eaque natus ea? Porro, vero. Corporis cum vitae reprehenderit omnis repellat?
+        </li>
+        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi natus quam, et nihil ea beatae sequi porro consectetur odio, ullam recusandae qui labore voluptatem dolores velit! Ea dolorem laudantium saepe.</li>
+        <li>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore accusamus non omnis voluptatem nemo, nisi delectus, tempore impedit consectetur dicta ipsum magni excepturi iste exercitationem veniam tempora, aspernatur eum esse?
+        </li>
+      </ul>
+    </div>
+    
+  </div>
+  <button type="button" class="collapsible">Show More</button>
+  
+
+  <script src="js/main.js"></script>
+
+  <!--footer-->
+  <div id="footer"></div> 
+  <script> 
+      fetch('footer.html') 
+          .then(response => response.text()) 
+          .then(data => { 
+              document.getElementById('footer').innerHTML = data; 
+          }); 
+  </script> 
+</body>
+</html>

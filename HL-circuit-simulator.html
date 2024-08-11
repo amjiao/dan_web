@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Extraction-Free Circuit Simulators:</title><link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="css/navbar-foot.css"/>
+  <script src="https://kit.fontawesome.com/fba5d0916e.js" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" href = "images/purduep.png" type = "image/x-icon"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!--navbar-->
+  <div id="navbar"></div> 
+  <script> 
+      fetch('navbar.html') 
+          .then(response => response.text()) 
+          .then(data => { 
+              document.getElementById('navbar').innerHTML = data; 
+          }); 
+  </script> 
+
+  <div class="top-pad heading">
+    <h2>Extraction-Free Circuit Simulators:</h2>
+  </div>
+  
+  <div class="container research-desc">
+    <img src="images/research-highlights/circuit simulator/cosim.jpg" style="float:right;"/>
+    <p> The prevailing circuit simulation paradigm involves first the extraction of the linear network. The extracted model of the linear network is then stitched with the nonlinear devices for the simulation of the entire circuit. Besides various inaccuracy issues due to circuit extraction and the stitching of circuit models, existing circuit simulators have not achieved optimal complexity. We developed an extraction-free circuit simulator that bypasses circuit extraction altogether.</p>
+    <br>
+    <img src="images/research-highlights/circuit simulator/speedup.jpg"/>
+    <p>Guided by electromagnetics-based first principles, this extration-free simulator has not only accomplished an optimal complexity both in time and space, but also offered uncompromised accuracy and linear speedup in parallelization, overcoming the shortcomings of the existing extraction-based circuit simulation frameworks. Application to die-package co-simulation as well as very large-scale on-chip circuits involving close to 1 million CMOS transistors and interconnects having hundreds of millions of unknowns has demonstrated the superior performance of the new extraction-free circuit simulator.</p>
+    <br>
+    
+  </div>
+  <section class="selected-pubs">
+  <div class="container">
+    <h2>Selected Publications</h2>
+    <ul>
+      <li>
+        <a href="https://engineering.purdue.edu/~djiao/publications/Extraction_free.pdf" target="_blank">[1] Q. He, D. Chen, and D. Jiao, "From Layout Directly to Simulation: A First-Principle Guided Circuit Simulator of Linear Complexity and Its Efficient Parallelization," IEEE Trans. on Components, Packaging, and Manufacturing Technology, vol. 2, no. 4, pp. 687 - 699, April 2012.
+        </a>
+      </li>
+      <li>
+        <a href="https://engineering.purdue.edu/~djiao/publications/Duo_parallel.pdf" target="_blank">[2] D. Chen, D. Jiao, and C. Koh, "A Parallel Transient Simulator of Linear Speedup and Electromagnetic Accuracy for the Simulation of Die-Package Interaction," IEEE Trans. on Components, Packaging, and Manufacturing Technology, vol. 1, no. 5, pp. 752-759, May 2011.
+        </a>
+      </li>
+      <li>
+        <a href="https://engineering.purdue.edu/~djiao/publications/OrFERR.pdf" target="_blank">[3] D. Chen and D. Jiao, "Time-Domain Orthogonal Finite-Element Reduction-Recovery (OrFE-RR) Method for Electromagnetics-Based Analysis of Large-Scale Integrated Circuit and Package Problems," IEEE Transactions on Computer Aided Design of Integrated Circuits and Systems, vol. 28, no. 8, pp. 1138-1149, Aug. 2009.
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!--footer-->
+<div id="footer"></div> 
+<script> 
+    fetch('footer.html') 
+        .then(response => response.text()) 
+        .then(data => { 
+            document.getElementById('footer').innerHTML = data; 
+        }); 
+</script> 
+</body>
+</html>
